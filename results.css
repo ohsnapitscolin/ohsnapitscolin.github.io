@@ -5,6 +5,11 @@ body {
 	font-size: 50px;
 }
 
+#container {
+	display: inline-block;
+	padding: 25px;
+}
+
 h1 {
 	line-height: 20px;
 }
