@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Roll Bitch</title>
+	<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<meta name="viewport" content='width=400'>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+	<body>
+		<div id="container" onclick="updateStyle()">
+			<h1>Roll Bitch</h1>
+			<h2 id="totalroll"></h2>
+			<form id="mission">
+				<input id="1" type="radio" name="roll"><label id="1Text" for="1">1</label>  
+				<input id="2" type="radio" name="roll"><label id="2Text" for="2">2</label> 
+				<input id="3" type="radio" name="roll"><label id="3Text" for="3">3</label> 
+				<input id="4" type="radio" name="roll"><label id="4Text" for="4">4</label> 
+				<input id="5" type="radio" name="roll"><label id="5Text" for="5">5</label> 
+				<input id="6" type="radio" name="roll"><label id="6Text" for="6">6</label> 
+				<input id="7" type="radio" name="roll"><label id="7Text" for="7">7</label> 
+				<input id="8" type="radio" name="roll"><label id="8Text" for="8">8</label><br>
+				<input id="submitButton" type="button" onclick="submitroll()" value="Roll">
+			</form>
+			</div>
+	</body>
+</html>
