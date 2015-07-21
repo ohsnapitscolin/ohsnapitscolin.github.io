@@ -35,12 +35,20 @@ function submitroll() {
 		numDie = 8;	
 	}
 	var totalRoll = 0;
-	for (var i = 0; i < numDie; i++) {
-		var roll = Math.floor((Math.random() * 3));
-		totalRoll += roll;
-	}
+	var currentVal = 0;
+    var i = setInterval(function () {
+    		var roll = Math.floor((Math.random() * 3));
+			totalRoll += roll;
+            if (currentVal === numDie) {
+                clearInterval(i);
+            }
+            else
+            {
+                currentVal++;
+                $('#totalroll').text(totalRoll).animate(100);
+            }
+        }, 25);
 	missionRef.set({roll: totalRoll});
-
 }
 
 function updateStyle() {
