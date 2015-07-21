@@ -35,7 +35,7 @@ function submitroll() {
 		numDie = 8;	
 	}
 	var totalRoll = 0;
-	var currentVal = 0;
+	var currentVal = 1;
     var i = setInterval(function () {
     		var roll = Math.floor((Math.random() * 3));
 			totalRoll += roll;
