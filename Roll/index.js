@@ -41,6 +41,7 @@ function submitroll() {
 			totalRoll += roll;
             if (currentVal === numDie) {
                 clearInterval(i);
+                missionRef.set({roll: totalRoll});
             }
             else
             {
@@ -48,7 +49,6 @@ function submitroll() {
                 $('#totalroll').text(totalRoll).animate(100);
             }
         }, 25);
-	missionRef.set({roll: totalRoll});
 }
 
 function updateStyle() {
