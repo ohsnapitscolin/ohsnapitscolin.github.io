@@ -40,8 +40,8 @@ function submitroll() {
     		var roll = Math.floor((Math.random() * 3));
 			totalRoll += roll;
             if (currentVal === numDie) {
-                clearInterval(i);
                 missionRef.set({roll: totalRoll});
+                clearInterval(i);
             }
             else
             {
